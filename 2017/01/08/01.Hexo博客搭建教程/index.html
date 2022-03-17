@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://16cm.github.io/images/%E6%95%99%E7%A8%8B06.png">
 <meta property="og:image" content="https://16cm.github.io/images/%E6%95%99%E7%A8%8B07.png">
 <meta property="article:published_time" content="2017-01-08T10:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-16T13:33:09.341Z">
+<meta property="article:modified_time" content="2022-03-17T11:57:32.151Z">
 <meta property="article:author" content="数字难民">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -107,77 +107,35 @@
         <p>在 Github Pages 搭建基于 Hexo 框架的博客，快速上手而且简洁高效，详见 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/index.html">Hexo 文档</a>。</p>
 <span id="more"></span>
 
-<h4 id="2022-03-15"><a href="#2022-03-15" class="headerlink" title="2022-03-15"></a>2022-03-15</h4><p>因为设备换为 Mac，所以更新下教程。</p>
-<p>macOS 使用 Homebrew 安装 Node.js，所以先用以下命令安装 Homebrew：</p>
-<p><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code></p>
-<p>然后安装 Node.js：</p>
-<p><code>brew install node</code></p>
-<p>然后安装 Git：</p>
-<p><code>brew install git</code></p>
-<p>然后跳到下面第 5 步安装 Hexo，后续步骤一致。</p>
+<h4 id="2022-03-15"><a href="#2022-03-15" class="headerlink" title="2022-03-15"></a>2022-03-15</h4><p>因为设备换为 Mac，所以更新下教程。<br>macOS 使用 Homebrew 安装 Node.js，所以先用以下命令安装 Homebrew：<br><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code><br>然后安装 Node.js：<br><code>brew install node</code><br>然后安装 Git：<br><code>brew install git</code><br>然后跳到下面第 5 步安装 Hexo，后续步骤一致。</p>
 <hr>
-<h4 id="1-Node-js"><a href="#1-Node-js" class="headerlink" title="1. Node.js"></a>1. Node.js</h4><p>下载链接：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v8.10.0/node-v8.10.0-x86.msi">32bit</a>&amp;<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v8.10.0/node-v8.10.0-x64.msi">64bit</a></p>
-<p>不确定版本的话直接下载32位即可，然后保持默认设置安装。</p>
-<p>检查安装情况，win+r 打开运行，输入 cmd 回车，输入以下代码:</p>
-<p><code>node -v</code></p>
-<p><code>npm -v</code></p>
-<p>如下图所示，则说明安装正确。</p>
+<h4 id="1-Node-js"><a href="#1-Node-js" class="headerlink" title="1. Node.js"></a>1. Node.js</h4><p>下载链接：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v8.10.0/node-v8.10.0-x86.msi">32bit</a>&amp;<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v8.10.0/node-v8.10.0-x64.msi">64bit</a>，不确定版本的话直接下载32位即可，然后保持默认设置安装。<br>检查安装情况，win+r 打开运行，输入 cmd 回车，输入 <code>node -v</code> 和 <code>npm -v</code>，如下图所示，则说明安装正确。</p>
 <p><img src="/images/%E6%95%99%E7%A8%8B01.png" alt="查看 Node 和 npm 版本"></p>
-<h4 id="2-Git"><a href="#2-Git" class="headerlink" title="2. Git"></a>2. Git</h4><p>下载链接：<a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-32-bit.exe">32bit</a>&amp;<a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-64-bit.exe">64bit</a></p>
-<p>其他设置只需要保持默认，但建议 PATH 选项按照下图选择：</p>
+<h4 id="2-Git"><a href="#2-Git" class="headerlink" title="2. Git"></a>2. Git</h4><p>下载链接：<a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-32-bit.exe">32bit</a>&amp;<a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-64-bit.exe">64bit</a>，其他设置只需要保持默认，但建议 PATH 选项按照下图选择：</p>
 <p><img src="/images/%E6%95%99%E7%A8%8B02.png" alt="PATH 设置"></p>
-<p>检查安装情况，输入以下代码:</p>
-<p><code>git --version</code></p>
-<p>如下图所示，则说明安装正确。</p>
+<p>检查安装情况，输入 <code>git --version</code>，如下图所示，则说明安装正确。</p>
 <p><img src="/images/%E6%95%99%E7%A8%8B03.png" alt="查看 Git 版本"></p>
-<h4 id="3-Github"><a href="#3-Github" class="headerlink" title="3. Github"></a>3. Github</h4><p>打开 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a> 注册帐号，前往邮箱确认注册。<br>登录帐号，点击页面右上角的+，选择 New repository，注意在 Repository name 下必须填写为 yourname.github.io，其他可不填，然后点击 Create repository。</p>
+<h4 id="3-Github"><a href="#3-Github" class="headerlink" title="3. Github"></a>3. Github</h4><p>打开 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a> 注册帐号，前往邮箱确认注册。登录帐号，点击页面右上角的+，选择 New repository，注意在 Repository name 下必须填写为 yourname.github.io，其他可不填，然后点击 Create repository。</p>
 <p><img src="/images/%E6%95%99%E7%A8%8B04.png"></p>
 <h4 id="4-GitHub-Pages"><a href="#4-GitHub-Pages" class="headerlink" title="4. GitHub Pages"></a>4. GitHub Pages</h4><p>可以去看这里的<a target="_blank" rel="noopener" href="https://pages.github.com/">官方教程</a>，只要 <a target="_blank" rel="noopener" href="https://yourname.github.io/">yourname.github.io</a> 可以正常访问就可以。</p>
 <h4 id="5-Hexo"><a href="#5-Hexo" class="headerlink" title="5. Hexo"></a>5. Hexo</h4><p>任意盘符下新建文件夹，打开文件夹右键选择 Git Bash Here，如图：</p>
 <p><img src="/images/%E6%95%99%E7%A8%8B05.png"></p>
-<p>输入：</p>
-<p><code>npm install hexo-cli -g</code></p>
-<p>看到下图，继续输入：</p>
+<p>输入 <code>npm install hexo-cli -g</code> 看到下图：</p>
 <p><img src="/images/%E6%95%99%E7%A8%8B06.png"></p>
-<p><code>npm install hexo --save</code></p>
-<p>结束后输入：</p>
-<p><code>hexo -v</code></p>
-<p>看到下图就说明安装成功。</p>
+<p>继续输入 <code>npm install hexo --save</code>，结束后输入 <code>hexo -v</code>，看到下图就说明安装成功。</p>
 <p><img src="/images/%E6%95%99%E7%A8%8B07.png" alt="查看 Hexo 版本"></p>
-<p>输入以下代码初始化：</p>
-<p><code>hexo init</code></p>
-<p>然后输入：</p>
-<p><code>npm install</code></p>
-<p>等待 npm 安装完所需组件即可。</p>
-<p>安装完成后，再次输入：</p>
-<p><code>hexo g</code></p>
-<p>然后</p>
-<p><code>hexo s</code></p>
-<p>这时在浏览器中打开 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>，就看见了你的博客首页。</p>
-<h4 id="6-部署博客"><a href="#6-部署博客" class="headerlink" title="6. 部署博客"></a>6. 部署博客</h4><p>按 Crtl+C 停止服务，输入：</p>
-<p><code>npm install hexo-deployer-git --save</code></p>
-<p>然后输入：</p>
-<p><code>git config --global user.name &quot;yourname&quot;</code></p>
-<p><code>git config --global user.email &quot;youremail&quot;</code></p>
-<p>在 _config.yml 文件中添加如下内容：</p>
+<p>输入 <code>hexo init</code> 初始化，然后输入 <code>npm install</code> 等待 npm 安装完成后，再次输入 <code>hexo g</code> 然后 <code>hexo s</code>，这时在浏览器中打开 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>，就看见了你的博客首页。</p>
+<h4 id="6-部署博客"><a href="#6-部署博客" class="headerlink" title="6. 部署博客"></a>6. 部署博客</h4><p>按 Crtl+C 停止服务，输入 <code>npm install hexo-deployer-git --save</code>，然后输入 <code>git config --global user.name &quot;yourname&quot;</code> 和 <code>git config --global user.email &quot;youremail&quot;</code>，之后在 _config.yml 文件中添加如下内容：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>再输入：</p>
-<p><code>ssh-keygen -t rsa -C &quot;youremail&quot;</code></p>
-<p>连续按3个回车后返回如下信息：</p>
+<p>再输入 <code>ssh-keygen -t rsa -C &quot;youremail&quot;</code>，连续按3个回车后返回如下信息：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved in /home/tekkub/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /home/tekkub/.ssh/id_rsa.pub.</span><br></pre></td></tr></table></figure>
-
-<p>打开生成的 id_rsa.pub，前往 <a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a> 添加密钥。</p>
-<p>输入以下代码测试：</p>
-<p><code>ssh git@github.com</code></p>
-<p>返回 successfully 信息即表示部署成功。</p>
-<p>我们就可以使用以下命令发布文章了：</p>
-<p><code>hexo d</code></p>
+<p>打开生成的 id_rsa.pub，前往 <a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a> 添加密钥，再次输入 <code>ssh git@github.com</code> 返回 successfully 信息即表示部署成功，然后我们就可以使用 <code>hexo d</code> 命令发布文章了！</p>
 <h4 id="7-其他"><a href="#7-其他" class="headerlink" title="7. 其他"></a>7. 其他</h4><p>Hexo 命令可以参考<a href="https://16cm.github.io/2017/01/09/Hexo%E6%8C%87%E4%BB%A4/">这篇文章</a>。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://16cm.github.io/2017/01/08/01.Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" data-id="cl0s4uppe0000hsts09h95gk7" data-title="01.Hexo博客搭建教程" class="article-share-link">Share</a>
+      <a data-url="https://16cm.github.io/2017/01/08/01.Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" data-id="cl0uxxq0i0000c0ts34aaelgq" data-title="01.Hexo博客搭建教程" class="article-share-link">Share</a>
       
       
       
